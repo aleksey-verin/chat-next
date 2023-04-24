@@ -11,9 +11,11 @@ const Page: FC<pageProps> = ({}) => {
   const [isLoading, setIsLoading] = useState<boolean>(false)
 
   const loginWithGoogle = async () => {
+    console.log('hey')
     setIsLoading(true)
+
     try {
-      throw new Error('Some error!!!')
+      // throw new Error('Some error!!!')
       await signIn('google')
     } catch (error) {
       // display message to user
